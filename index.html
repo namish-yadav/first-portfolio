@@ -1,194 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P3X</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Parisienne&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P3X</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Playfair+Display:ital,wght@1,400;1,700&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="loading-screen">
-        <div class="loading-content">
-            <div class="logo">P3X</div>
-            <div class="service-info">Trust It</div>
-            <div class="image-stack">
-                <img src="pfp.gif" alt="Profile Image" class="stack-image">
-                <img src="pfp2.gif" alt="Profile Image 2" class="stack-image">
-                <img src="gojo.gif" alt="Gojo Image" class="stack-image">
-            </div>
-            <div id="loading-progress">0.00</div>
+
+  <!-- ─── Loading Screen ─────────────────────────────────────────────── -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">P3X</div>
+      <div class="loading-tagline">Trust It</div>
+      <div class="image-stack">
+        <img src="./assets/pfp.gif"  alt="Profile"  class="stack-image">
+        <img src="./assets/pfp2.gif" alt="Profile 2" class="stack-image">
+        <img src="./assets/gojo.gif" alt="Gojo"      class="stack-image">
+      </div>
+      <div id="loading-progress">0.00</div>
+    </div>
+  </div>
+
+  <!-- ─── Background ─────────────────────────────────────────────────── -->
+  <div class="background"></div>
+
+  <!-- ─── Nav ────────────────────────────────────────────────────────── -->
+  <header>
+    <nav class="fixed-nav">
+      <div class="nav-container">
+        <div class="logo-container">
+          <span class="logo-text">P3X</span>
         </div>
+        <div class="nav-buttons">
+          <a href="#home"    class="nav-button">Home</a>
+          <a href="#contact" class="nav-button">Contact</a>
+          <a href="#mods"    class="nav-button">Mods</a>
+        </div>
+        <div class="theme-toggle">
+          <input type="checkbox" id="theme-switch" class="theme-switch">
+          <label for="theme-switch" class="theme-switch-label">
+            <span class="theme-switch-inner"></span>
+          </label>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#home"    class="mobile-menu-item">Home</a>
+      <a href="#contact" class="mobile-menu-item">Contact</a>
+      <a href="#mods"    class="mobile-menu-item">Mods</a>
+    </div>
+  </header>
+
+  <!-- ─── Fixed watermark ────────────────────────────────────────────── -->
+  <div class="p3x-watermark" aria-hidden="true">P3X</div>
+
+  <!-- ─── Hero ────────────────────────────────────────────────────────── -->
+  <section id="home" class="home-container">
+    <div class="parallax-text-container">
+      <div class="parallax-text" aria-hidden="true">
+        <span class="text-edge">PHOENIXFY</span>
+        <span class="text-glow">PHOENIXFY</span>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─────────────────────────────────────────────────────── -->
+  <section id="contact" class="container">
+    <div class="profile">
+      <!-- Wrapper needed for the spinning ring pseudo-element -->
+      <div class="profile-pic-wrapper">
+        <img src="./assets/pfp.gif" alt="Phoenixfy" class="profile-pic">
+      </div>
+      <h1 class="username">Phoenixfy</h1>
+      <p class="bio">Please take me as a joke so I can prove what joke I am</p>
     </div>
 
-    <div class="background"></div>
-    <header>
-        <nav class="fixed-nav">
-            <div class="nav-container">
-                <div class="logo-container">
-                    <span class="logo-text">P3X</span>
-                </div>
-                <div class="nav-buttons">
-                    <a href="#home" class="nav-button">Home</a>
-                    <a href="#contact" class="nav-button">Contact</a>
-                    <a href="#mods" class="nav-button">MODS</a>
-                </div>
-                <div class="theme-toggle">
-                    <input type="checkbox" id="theme-switch" class="theme-switch">
-                    <label for="theme-switch" class="theme-switch-label">
-                        <span class="theme-switch-inner"></span>
-                        <span class="theme-switch-switch"></span>
-                    </label>
-                </div>
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <a href="#home" class="mobile-menu-item">Home</a>
-            <a href="#contact" class="mobile-menu-item">Contact</a>
-            <a href="#mods" class="mobile-menu-item">MODS</a>
-        </div>
-    </header>
+    <div class="links">
+      <h2 class="contacts-heading">Contacts</h2>
 
-    <div class="p3x-text">P3X</div>
+      <a href="https://instagram.com/p3x.46" target="_blank" rel="noopener noreferrer" class="link-item">
+        <img src="./assets/ig.png" alt="" class="link-icon" aria-hidden="true">
+        <span class="link-title">Main Instagram</span>
+        <span class="link-arrow">→</span>
+      </a>
 
-    <div id="home" class="home-container">
-        <div class="parallax-text-container">
-            <div class="parallax-text">
-                <div class="text-layer edge">PHOENIXFY</div>
-                <div class="text-layer glow">PHOENIXFY</div>
-            </div>
-        </div>
+      <a href="https://instagram.com/namishyadv" target="_blank" rel="noopener noreferrer" class="link-item">
+        <img src="./assets/ig.png" alt="" class="link-icon" aria-hidden="true">
+        <span class="link-title">Private Instagram</span>
+        <span class="link-arrow">→</span>
+      </a>
+
+      <a href="https://t.me/MANlPULATE" target="_blank" rel="noopener noreferrer" class="link-item">
+        <img src="./assets/tele.png" alt="" class="link-icon" aria-hidden="true">
+        <span class="link-title">Telegram</span>
+        <span class="link-arrow">→</span>
+      </a>
+
+      <button id="discordBtn" class="link-item" aria-label="Copy Discord username">
+        <img src="./assets/dc.png" alt="" class="link-icon" aria-hidden="true">
+        <span class="link-title">Discord</span>
+        <span class="link-arrow">→</span>
+      </button>
+
+      <a href="mailto:evaricated@gmail.com" class="link-item">
+        <img src="./assets/mail.png" alt="" class="link-icon" aria-hidden="true">
+        <span class="link-title">Mail me</span>
+        <span class="link-arrow">→</span>
+      </a>
     </div>
 
-    <div id="contact" class="container">
-        <div class="profile">
-            <img src="pfp.gif" alt="Phoenixfy" class="profile-pic">
-            <h1 class="username">Phoenixfy</h1>
-            <p class="bio">Please take me as a joke so I can prove what joke I am</p>
-        </div>
-        <div class="links">
-            <h2 class="contacts-heading">Contacts</h2>
-            <a href="https://instagram.com/p3x.46" target="_blank" rel="noopener noreferrer" class="link-item">
-                <span class="link-title">Main Instagram</span>
-                <img src="ig.png" alt="Instagram" class="hover-image">
-            </a>
-            <a href="https://instagram.com/namishyadv" target="_blank" rel="noopener noreferrer" class="link-item">
-                <span class="link-title">Private Instagram</span>
-                <img src="ig.png" alt="Instagram" class="hover-image">
-            </a>
-            <a href="https://t.me/MANlPULATE" target="_blank" rel="noopener noreferrer" class="link-item">
-                <span class="link-title">Telegram</span>
-                <img src="tele.png" alt="Telegram" class="hover-image">
-            </a>
-            <a href="#" id="discordBtn" class="link-item discord-btn">
-                <span class="link-title">Discord</span>
-                <img src="dc.png" alt="Discord" class="hover-image">
-            </a>
-            <a href="mailto:evaricated@gmail.com" class="link-item">
-                <span class="link-title">Mail me</span>
-                <img src="mail.png" alt="Mail" class="hover-image">
-            </a>
-        </div>
-        <div id="copyNotification" class="copy-notification">Copied to clipboard!</div>
+    <div id="copyNotification" class="copy-notification" role="status" aria-live="polite">
+      Copied px93 to clipboard!
     </div>
+  </section>
 
-    <section id="mods" class="mods-section">
-        <h2 class="mid-align f14">MODS</h2>
-        <div class="mod-container">
-            <div class="mod-item">
-                <h3>Android <span class="toggle-btn">+</span></h3>
-                <div class="mod-content">
-                    <p>AeroInsta</p>
-                    <p>Download link: <a href="https://www.mediafire.com/file/a1jdunr2smqgew1/AeroInsta_V24.0.0_Clone_DEFAULTaeromods.app.apk/file&lang=en" target="_blank">AeroInsta V24.0.0</a>(Not working currently will be updated soon)</p>
-                    <h4>Installation Process</h4>
-                    <ol>
-                        <li>
-                            <p><strong>Step 1:</strong> Allow unknown installation from Chrome or any browser you use</p>
-                            <img src="ssa1.jpg" alt="Allow unknown installation" class="screenshot">
-                        </li>
-                        <li>
-                            <p><strong>Step 2:</strong> Now click on the download link and then you will be redirected on a page and then click on the blue button named AeroInsta</p>
-                            <img src="ssa2.jpg" alt="Download AeroInsta" class="screenshot">
-                        </li>
-                        <li>
-                            <p><strong>Step 3:</strong> Now install it and login your Instagram account</p>
-                        </li>
-                        <li>
-                            <p><strong>Step 4:</strong> Now click on the button shown in the image</p>
-                            <img src="ssa4.jpg" alt="Settings button" class="screenshot">
-                        </li>
-                        <li>
-                            <p><strong>Step 5:</strong> The installation is complete, now just set up the tweaks/mod in your app as per your needs</p>
-                            <img src="ssa5.jpg" alt="Tweaks setup" class="screenshot">
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="mod-item">
-                <h3>iOS <span class="toggle-btn">+</span></h3>
-                <div class="mod-content">
-                    <p>InstaKilloGram</p>
-                    <p>Download link: <a href="https://drive.google.com/file/d/1P8LoihO-u92VUy5mUZ2oV82N_IOnyy04/view?usp=sharing" target="_blank">InstaKilloGram</a>(Not working currently will be updated soon)</p>
-                    <div class="install-guide">
-                        <h4>Installation Process</h4>
-                        <ol>
-                            <li>
-                                <p><strong>Step 1:</strong> Download the mod from Google Drive</p>
-                                <img src="ssios1.jpg" alt="Google Drive download" class="screenshot">
-                                <img src="ssios2.jpg" alt="Google Drive download" class="screenshot">
-                                <p>Now save it to files</p>
-                                <img src="ssios3.jpg" alt="Save to files" class="screenshot">
-                            </li>
-                            <li>
-                                <p><strong>Step 2:</strong> Open any sideloader app. In my case, I'm using Scarlett to sideload. I would recommend using Scarlett too.</p>
-                                <p><strong>Open Scarlett</strong></p>
-                                <p>Now click on the button in between as shown in the screenshot</p>
-                                <img src="ssios4.jpg" alt="Scarlett app" class="screenshot">
-                                <p>Then click on the button highlighted in this screenshot</p>
-                                <img src="ssios5.jpg" alt="Scarlett app button" class="screenshot">
-                            </li>
-                            <li>
-                                <p><strong>Step 3:</strong> Choose the IPA you want to install</p>
-                                <img src="ssios6.jpg" alt="Choose IPA" class="screenshot">
-                            </li>
-                            <li>
-                                <p><strong>Step 4:</strong> A screen like this will appear</p>
-                                <img src="ssios7.jpg" alt="Installation screen" class="screenshot">
-                                <p>After it disappears, a message will pop up saying this</p>
-                                <img src="ssios8.jpg" alt="Installation message" class="screenshot">
-                                <p>Click on install</p>
-                            </li>
-                            <li>
-                                <p><strong>Step 5:</strong> Login your Instagram account and click on the settings button</p>
-                                <img src="ssios9.jpg" alt="Instagram settings" class="screenshot">
-                                <p>And choose whatever setting is required as per your work</p>
-                                <img src="ssios10.jpg" alt="Instagram mod settings" class="screenshot">
-                            </li>
-                        </ol>
-                        <h4><a href="https://usescarlet.com/" target="_blank">Scarlett Installer</a></h4>
-                    </div>
-                    <div class="video-tutorial">
-                        <h4>Video Tutorial</h4>
-                        <p>Video tutorial for installing Scarlett: <a href="https://youtu.be/66sGFr2B_Hk?si=VHiO5Hd9ZCbpMy9-" target="_blank">Watch here</a></p>
-                        <p>Video tutorial for installing apps using Scarlett: <a href="https://youtu.be/tAvsNrQ1HtU?si=PmnYDAHrZIO7wIpr" target="_blank">Watch here</a></p>
-                    </div>
-                </div>
-            </div>
+  <!-- ─── Mods ─────────────────────────────────────────────────────────── -->
+  <section id="mods" class="mods-section">
+    <h2 class="section-title">MODS</h2>
+
+    <div class="mod-container">
+
+      <!-- Android -->
+      <div class="mod-item">
+        <button class="mod-header" aria-expanded="false">
+          Android
+          <span class="toggle-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="mod-content" hidden>
+          <p><strong>AeroInsta</strong></p>
+          <p>Download: <a href="https://www.mediafire.com/file/a1jdunr2smqgew1/AeroInsta_V24.0.0_Clone_DEFAULTaeromods.app.apk/file&lang=en" target="_blank">AeroInsta V24.0.0</a> <em>(Not working currently — will be updated soon)</em></p>
+
+          <h4 class="guide-heading">Installation Process</h4>
+          <ol class="guide-steps">
+            <li>
+              <strong>Step 1:</strong> Allow unknown installation from Chrome or any browser you use.
+              <img src="./assets/ssa1.jpg" alt="Allow unknown installation" class="screenshot">
+            </li>
+            <li>
+              <strong>Step 2:</strong> Click the download link — you'll be redirected to a page. Click the blue "AeroInsta" button.
+              <img src="./assets/ssa2.jpg" alt="Download AeroInsta" class="screenshot">
+            </li>
+            <li>
+              <strong>Step 3:</strong> Install it and log into your Instagram account.
+            </li>
+            <li>
+              <strong>Step 4:</strong> Click the button shown in the image below.
+              <img src="./assets/ssa4.jpg" alt="Settings button" class="screenshot">
+            </li>
+            <li>
+              <strong>Step 5:</strong> Setup is complete — configure tweaks/mods as needed.
+              <img src="./assets/ssa5.jpg" alt="Tweaks setup" class="screenshot">
+            </li>
+          </ol>
         </div>
-    </section>
+      </div>
 
-    <div id="star-trail"></div>
-    <script src="script.js"></script>
+      <!-- iOS -->
+      <div class="mod-item">
+        <button class="mod-header" aria-expanded="false">
+          iOS
+          <span class="toggle-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="mod-content" hidden>
+          <p><strong>InstaKilloGram</strong></p>
+          <p>Download: <a href="https://drive.google.com/file/d/1P8LoihO-u92VUy5mUZ2oV82N_IOnyy04/view?usp=sharing" target="_blank">InstaKilloGram</a> <em>(Not working currently — will be updated soon)</em></p>
+
+          <h4 class="guide-heading">Installation Process</h4>
+          <ol class="guide-steps">
+            <li>
+              <strong>Step 1:</strong> Download the mod from Google Drive.
+              <img src="./assets/ssios1.jpg" alt="Google Drive download step 1" class="screenshot">
+              <img src="./assets/ssios2.jpg" alt="Google Drive download step 2" class="screenshot">
+              Save it to Files.
+              <img src="./assets/ssios3.jpg" alt="Save to Files" class="screenshot">
+            </li>
+            <li>
+              <strong>Step 2:</strong> Open a sideloader app — I recommend <strong>Scarlett</strong>. Click the middle button shown below.
+              <img src="./assets/ssios4.jpg" alt="Scarlett app" class="screenshot">
+              Then click the highlighted button.
+              <img src="./assets/ssios5.jpg" alt="Scarlett button" class="screenshot">
+            </li>
+            <li>
+              <strong>Step 3:</strong> Choose the IPA file you want to install.
+              <img src="./assets/ssios6.jpg" alt="Choose IPA" class="screenshot">
+            </li>
+            <li>
+              <strong>Step 4:</strong> A screen like this will appear.
+              <img src="./assets/ssios7.jpg" alt="Installation screen" class="screenshot">
+              After it disappears, click <strong>Install</strong> on the popup.
+              <img src="./assets/ssios8.jpg" alt="Install popup" class="screenshot">
+            </li>
+            <li>
+              <strong>Step 5:</strong> Log into Instagram and click the settings button.
+              <img src="./assets/ssios9.jpg" alt="Instagram settings" class="screenshot">
+              Configure to your needs.
+              <img src="./assets/ssios10.jpg" alt="Mod settings" class="screenshot">
+            </li>
+          </ol>
+
+          <div class="video-tutorial">
+            <h4 class="guide-heading">Video Tutorials</h4>
+            <p><a href="https://youtu.be/66sGFr2B_Hk?si=VHiO5Hd9ZCbpMy9-" target="_blank">Installing Scarlett ↗</a></p>
+            <p><a href="https://youtu.be/tAvsNrQ1HtU?si=PmnYDAHrZIO7wIpr" target="_blank">Installing apps via Scarlett ↗</a></p>
+            <p><a href="https://usescarlet.com/" target="_blank">Scarlett Installer ↗</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
